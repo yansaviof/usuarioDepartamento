@@ -14,13 +14,13 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-
+//
     @GetMapping
     public List<User> findAll(){
         List<User> result = userRepository.findAll();
         return  result;
     }
-
+//
     @GetMapping(value = "/{id}")
     public User insert(@RequestBody User user){
         User result = userRepository.save(user);
